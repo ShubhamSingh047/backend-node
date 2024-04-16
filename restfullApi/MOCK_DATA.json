@@ -1,38 +1,3 @@
-db.users.insertMany([{
-    "id": 1,
-    "first_name": "Taryn",
-    "last_name": "Matyukon",
-    "email": "tmatyukon0@gizmodo.com",
-    "gender": "Female",
-    "job_title": "Senior Cost Accountant"
-  },
-  {
-    "id": 2,
-    "first_name": "Rozele",
-    "last_name": "Shreeves",
-    "email": "rshreeves1@reddit.com",
-    "gender": "Female",
-    "job_title": "General Manager"
-  },
-  {
-    "id": 3,
-    "first_name": "Bourke",
-    "last_name": "Hudspeth",
-    "email": "bhudspeth2@youtube.com",
-    "gender": "Male",
-    "job_title": "Business Systems Development Analyst"
-  },
-  {
-    "id": 4,
-    "first_name": "Osmond",
-    "last_name": "Papaccio",
-    "email": "opapaccio3@unesco.org",
-    "gender": "Male",
-    "job_title": "Nurse"
-  }])
-
-
-
 [
   {
     "id": 1,
