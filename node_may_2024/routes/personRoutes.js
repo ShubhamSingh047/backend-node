@@ -52,4 +52,27 @@ router.get("/:workType", async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => {
+  try {
+    const personId = req.params.id;
+    const updatePersonData = req.body;
+    const response = await Person.findByIdAndUpdate(
+      personId,
+      updatePersonData,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+    if(!response){
+      return res.status(404).json({msg:"No user with this id."})
+    }
+    console.log("data updated");
+    res.status(200).json(response);
+  } catch (err) {
+    console.log(err, "Error in updating user details");
+    return res.status(500).json({ err: "Internal server error" });
+  }
+});
+
 module.exports = router;
